@@ -1,0 +1,37 @@
+body {
+    background: url("audio/Peace, Love, and Daydreams_ Photo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 20%;
+}
+
+#key-container {
+    width: 90%;
+    height: 8em;
+    margin-left: 5%; margin-right: 5%;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%);
+}
+
+.key {
+    float: left;
+    width: 9.11%;
+    margin-left: 1%;
+    border: white solid 2px;
+    text-align: center;
+    transition-duration: 0.07s;
+    background-color: #fefefe;
+    opacity: 0.3;
+}
+
+.key-text {
+    font-size: 5em;
+    font-family: Courier New;
+    color: #000;
+}
+
+.key-pressed {
+    transform: scale(1.1);
+}
