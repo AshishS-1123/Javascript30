@@ -34,3 +34,17 @@ window.addEventListener('keydown', (event) => {
 
 }, );
 
+// restoring key element to original state after key press and animation
+
+// get the node list of all elements
+let keyList = document.querySelectorAll('.key');
+
+// for all the elements in the list, add an event listener
+keyList.forEach(key => key.addEventListener('transitionend', (event) => {
+    // check if the event that was triggered was a transform event
+    if(event.propertyName != "transform")
+        return;
+
+    // remove the class for the given element
+    key.classList.remove('key-pressed');
+}));
