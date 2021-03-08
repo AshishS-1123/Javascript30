@@ -1,0 +1,42 @@
+body {
+    background-color: #79d2fd;
+}
+
+#clock-container {
+    height: 400px;
+    width: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 15px solid black;
+    border-radius: 50%;
+}
+
+#clock {
+    width: 90%;
+    height: 90%;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    width: 50%;
+    height: 7px;
+
+    background-color: black;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
