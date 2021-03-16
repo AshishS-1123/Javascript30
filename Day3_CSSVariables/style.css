@@ -1,0 +1,51 @@
+
+body
+{
+	background-color: black;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+h1 
+{
+	text-align: center;
+	color: white;
+	font-size: 4em;
+	margin-bottom: 2em;
+}
+
+#controls
+{
+	padding-top: 5%;
+	padding-left: 3%;
+	width: 40%;
+	height: 500px;
+	float: left;
+}
+
+label
+{
+	width: 100%;
+	color: white;
+	font-size: 2em;
+}
+
+input[type="range"]
+{
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+input[type="color"]
+{
+	width: 50%;
+	self-align: center;
+}
+
+#img-div 
+{
+	width: 50%;
+	float: right;
+	overflow: hidden;
+}
+
